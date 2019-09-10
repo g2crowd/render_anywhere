@@ -29,7 +29,7 @@ module RenderAnywhere
         self.class.send :helper, ApplicationHelper
       end
 
-      lookup_context.view_paths = ApplicationController.view_paths
+      self.class.view_paths = ApplicationController.view_paths
       config.javascripts_dir = Rails.root.join('public', 'javascripts')
       config.stylesheets_dir = Rails.root.join('public', 'stylesheets')
       config.assets_dir = Rails.root.join('public')

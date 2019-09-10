@@ -3,5 +3,6 @@ pkg/*
 .bundle
 Gemfile.lock
 log/
+.idea
 
 gemfiles/*.lock
